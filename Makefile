@@ -1,4 +1,4 @@
-test: 
-	python3 -m unittest
-	coveralls
+test:
+	coverage run test_rpn.py
+	coverage report
 .PHONY: test
