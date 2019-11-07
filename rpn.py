@@ -18,6 +18,12 @@ def calculate(myarg):
             token = int(token)
             stack.append(token)
         except ValueError:
+            if token=='++':
+                arg1 = stack.pop()
+                result = arg1 + 1
+                stack.append(result)
+                print(stack)
+                continue
             function = operators[token]
             arg2 = stack.pop()
             arg1 = stack.pop()
