@@ -23,6 +23,11 @@ def calculate(myarg):
                 result = arg1 + 1
                 stack.append(result)
                 print(stack)
+                arg2 = 0
+                arg2 -= 1
+                arg2 += 1
+                arg2 -= 2
+                arg2 += 2
                 continue
             function = operators[token]
             arg2 = stack.pop()
